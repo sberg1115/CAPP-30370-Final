@@ -26,10 +26,34 @@
 
 <main role="main" class="main-body">
 <div class="recipe">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
 <ol>
-	<li>In large saucepan melt butter over low heat. Add marshmallows and stir until completely melted. Remove from heat. </li>
-	<li>Add Rice Krispies cereal. Stir until well coated.</li>
-	<li>Using buttered spatula or wax paper, evenly press mixture into 13 x 9 x 2-inch pan coated with cooking spray. Cool. Cut into 2-inch squares. Best if served the same day.</li>
+  <li id="task1">In large saucepan melt butter over low heat. Add marshmallows and stir until completely melted. Remove from heat.</li>
+  <button id="button-task1">Click when step completed.</button>
+  <script>
+  
+   $('#button-task1').on("click", function() {
+	  $('#task1').append(" DONE!");
+   });
+  </script>
+ 
+  <li id="task2">Add Rice Krispies cereal. Stir until well coated.</li>
+  <button id="button-task2">Click when step completed.</button>
+  <script>
+  
+   $('#button-task2').on("click", function() {
+	  $('#task2').append(" DONE!");
+   });
+  </script>
+
+  <li id="task3">Using buttered spatula or wax paper, evenly press mixture into 13 x 9 x 2-inch pan coated with cooking spray. Cool. Cut into 2-inch squares. Best if served the same day.</li>
+  <button id="button-task3">Click when step completed.</button>
+  <script>
+  
+   $('#button-task3').on("click", function() {
+	  $('#task3').append(" DONE!");
+   });
+  </script>
 </ol>
 <b>NOTE:</b>
 <ul>

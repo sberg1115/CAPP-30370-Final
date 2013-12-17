@@ -21,3 +21,15 @@ $(document).on('click', "h1,h2,h3,h4,h5,h6", function(e){
         console.log('Color: '+ $(this).css('color'));
         console.log('Font-size: '+ $(this).css('font-size'));
 });
+
+    $('#button-task1').on("click", function() {
+  $('#task1').append(" DONE");
+   });
+
+   $('#button-task2').on("click", function() {
+  $('#task2').append(" DONE");
+   });
+
+   $('#button-task3').on("click", function() {
+  $('#task3').append(" DONE");
+   });
